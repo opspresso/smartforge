@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://smartforge.opspresso.com" target="_blank">
-    <img src="docs/images/smartforge.png" alt="SmartForge Logo" width="150"/>
+    <img src="docs/static/img/smartforge.svg" alt="SmartForge Logo" width="150"/>
   </a>
   <h1>SmartForge Website</h1>
 </div>
