@@ -1,0 +1,84 @@
+:root {
+    --transition-speed: 0.3s;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    transition: background-color var(--transition-speed);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    color: var(--bs-navbar-brand-color);
+}
+
+.navbar-brand img {
+    filter: brightness(0) invert(1);
+}
+
+[data-bs-theme="dark"] .navbar-brand img {
+    filter: brightness(0) invert(1);
+}
+
+.game-card {
+    transition: transform var(--transition-speed);
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+}
+
+.game-img {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    transition: transform var(--transition-speed);
+}
+
+.game-card:hover .game-img {
+    transform: scale(1.05);
+}
+
+.store-btn {
+    transition: transform var(--transition-speed);
+}
+
+.store-btn:hover {
+    transform: translateY(-5px);
+}
+
+.theme-switch {
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: var(--bs-dark);
+    flex-shrink: 0;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
